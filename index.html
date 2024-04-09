@@ -1,54 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Personal Pages</title>
-  </head>
-  <body>
-    <!--.......................... Start Home Pages.............................-->
-    <nav>
-      <div class="nav__content">
-        <div class="logo"><a href="#">Jane</a></div> 
-        <label for="check" class="checkbox">
-          <i class="ri-menu-line"></i>
-        </label>
-        <input type="checkbox" name="check" id="check" />
-        <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="gallery.html">Galery</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <section class="section">
-      <div class="section__container">
-        <div class="content">
-          <p class="subtitle">HELLO</p>
-          <h1 class="title">
-            I'm <span>Janneffer<br />a</span> Game Developer
-          </h1>
-          <p class="description">
-            Hello! I'm a Computer Science student with a deep passion for game development. 
-            Driven by a strong enthusiasm for exploring technology and creativity, 
-            I'm constantly learning and honing my skills in crafting and implementing captivating games.
-          </p>
-        </div>
-        <div class="image">
-          <img src="img/pfp.png" alt="profile" />
-        </div>
-      </div>
-    </section>
-    <!--..........................End Home Pages.............................-->
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!--..........................Start About.............................-->
- 
-  </body>
+  <!-------------------------javascript------------------------------>
+  <script src="script.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Jane's Personal Pages</title>
+</head>
+<body>
+
+     <!--..............................Navbar Start.............................-->
+    <header id="home">
+        <nav>
+          <div class="nav__bar">
+            <div class="nav__logo"><a href="#">Jane</a></div>
+            <ul class="nav__links">
+              <li class="link"><a href="#home">Home</a></li>
+              <li class="link"><a href="#about">About</a></li>
+              <li class="link"><a href="#blog">Blog</a></li>
+              <li class="link"><a href="#gallery">Gallery</a></li>
+              <li class="link"><a href="#footer">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="section__container header__container">
+          <h1>Hello! I'm Janneffer!</h1>
+          <h4>A Game Developer</h4>
+        </div>
+      </header>
+       <!--..............................Navbar End.............................-->
+
+       <!--..............................About Start.............................-->
+      <section class="about" id="about">
+        <div class="section__container about__container">
+          <div class="about__content">
+            <h2 class="section__header">About</h2>
+            <p class="section__subheader">
+                Hello! I'm a Computer Science student with a deep passion for 
+                game development. Driven by a strong enthusiasm for exploring
+                 technology and creativity, I'm constantly learning and honing
+                  my skills in crafting and implementing captivating games.
+            </p>
+            <div class="about__flex">
+              <div class="about__card">
+                <p>Unity Engineer</p>
+              </div>
+              <div class="about__card">
+                <p>Game Design</p>
+              </div>
+              <div class="about__card">
+                <p>C# and C++</p>
+              </div>
+            </div>
+          </div>
+          <div class="about__image">
+          <!-- <img src="img/" alt="about" />-->
+          </div>
+        </div>
+      </section>
+       <!--..............................About End.............................-->
+
+     <!--..............................Blog Start.............................-->
+      <section class="blogs" id="blog">
+        <div class="blogs__container">
+          <h2 class="section__header">Blogs</h2>
+          <p class="section__subheader">Perkenalan berbagai Game Engine yang digunakan Game Developer</p>
+        </div>
+        <div class="content">
+            <div class="card">
+                <img src="img/unity.jpeg">
+                <h4> UNITY ENGINE</h4>
+                <p>Unity adalah mesin permainan lintas platform yang dikembangkan oleh Unity Technologies, 
+                    pertama kali diumumkan dan diluncurkan pada bulan Juni 2005 di Apple Inc. Apple Worldwide 
+                    Developers Conference sebagai mesin permainan eksklusif Mac OS X Pada 2018. </p>
+            </div>
+            <div class="card">
+                <img src="img/unreal.jpg">
+                <h4> UNREAL ENGINE</h4>
+                <p> Unreal Engine adalah sebuah aplikasi pengembangan permainan (game engine) yang dibuat oleh Epic Games, 
+                    memulai debutnya pada 1998, dengan permainan bertema tembak-menembak orang-pertama (FPS).</p>
+
+            </div>
+            <div class="card">
+                <img src="img/godot.png">
+                <h4> GODOT ENGINE</h4>
+                <p> Godot adalah mesin permainan lintas platform, gratis dan sumber terbuka yang dirilis di bawah lisensi MIT yang permisif. 
+                    Ini awalnya dikembangkan oleh pengembang perangkat lunak Argentina Juan Linietsky dan Ariel Manzur. untuk beberapa perusahaan 
+                    di Amerika Latin sebelum dirilis ke publik pada tahun 2014.</p>
+
+                </div>
+        </div>
+    </div>
+</div>
+  
+      </section>
+       <!--..............................Blog End.............................-->
+
+      <!--..............................Gallery Start.............................-->
+      <section class="gallery" id="gallery">
+        <div class="gallery__container">
+          <h2 class="section__header">Gallery</h2>
+          <p class="section__subheader">
+            Jane's 3D Art Work Using Blender
+          </p>
+          </div>
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="img/first_room.png">
+                <img src="img/first_room.png" alt="Cinque Terre" width="600" height="400">
+              </a>
+              <div class="desc">Add a description of the image here</div>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="img/pudding.jpg">
+                <img src="img/pudding.jpg" alt="Forest" width="600" height="400">
+              </a>
+              <div class="desc">Add a description of the image here</div>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="img/first_room.png">
+                <img src="img/first_room.png" alt="Northern Lights" width="600" height="400">
+              </a>
+              <div class="desc">Add a description of the image here</div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="img/pudding.jpg">
+                <img src="img/pudding.jpg" alt="Northern Lights" width="600" height="400">
+              </a>
+              <div class="desc">Add a description of the image here</div>
+            </div>
+          </div>
+      </section>
+    <!--..............................Gallery End.............................-->
+
+    <!--..............................Footer Start.............................-->
+      <section class="footer" id="footer">
+          <div class="social">
+            <a href="https://www.linkedin.com/in/janneffer-pandelaki-308847283/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/ocsm_o"><i class="fab fa-linkedin"></i></a>
+          </div>
+
+          <ul class="list">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Blogs</a>
+            </li>
+            <li>
+              <a href="#">Gallery</a>
+            </li>
+          </ul>
+      </section>
+    <!--..............................Footer End.............................-->
+      
+  
+</body>
 </html>
